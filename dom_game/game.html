@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script type="text/javascript" src="dom.js"></script>
+    <link rel="stylesheet" href="game.css" class="rel">
+</head>
+<body>
+    
+    <h2>Rock Paper Scissors</h2>
+    <button onclick="
+   // pickPlayerMove('rock');
+    startGame('rock');
+    "class="rockButton buttonImage"><img src="./images/rock.jpg"class="move_image"></button>
+
+    <button onclick="
+    //pickPlayerMove('paper');
+    startGame('paper');
+    "class="paperButton buttonImage"><img src="./images/paper.jpg "class='move_image'></button>
+
+    <button onclick="
+   // pickPlayerMove('scissors');
+    startGame('scissors');
+    "class="scissorsButton buttonImage"><img src="./images/scissors.jpg"class="move_image"></button>
+
+
+    <br><br>
+    <h2>
+        <p class="resultado_partida showresult" ></p>
+        <br>
+        <div class ="js-moves images_picked "></div>
+            
+            
+        </p >
+      
+        Wins : <p class="wins showresult"></p>
+        Losses : <p class="losses showresult"></p>
+        Ties: <p class="ties showresult"></p>
+    </h2>
+    <button class="reset_score"onclick="
+    resetScore();
+    " >Reset Score</button>
+    
+    
+</body>
+</html>
